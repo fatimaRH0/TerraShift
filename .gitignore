@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+
+# Downloaded data stays on each computer, except the demo field (Meknes),
+# which ships with the app so the "Demo field" button works when hosted.
+data/*
+!data/test_field_smap.csv
+!data/test_field_ecostress.csv
+!data/test_field_modis.csv
+!data/test_field_landsat.csv
+!data/test_field_srtm.csv

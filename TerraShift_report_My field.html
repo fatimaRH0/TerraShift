@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>TerraShift report – My field</title>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+ * { box-sizing: border-box }
+ body { font-family: 'Instrument Sans', Arial, sans-serif; color:#1E2A22; background:#E6E9E2; margin:0; padding:24px 12px }
+ .page { background:#fff; max-width: 800px; margin:0 auto; padding:26px 30px; border-radius:10px; line-height:1.5 }
+ .head { background:#2F6B4F; color:#fff; border-radius:10px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; gap:16px }
+ .head small { opacity:.85; display:block } .head h1 { margin:2px 0; font-size:1.8rem; font-weight:700 }
+ .verdict { margin:16px 0 12px; padding:12px 16px; border-radius:10px; background:#E5F1E3; color:#27500A; border-left:4px solid #2F6B4F }
+ .verdict b { font-size:1.15rem; display:block; margin-bottom:4px } .verdict ul { margin:4px 0 0; padding-left:18px }
+ .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:10px }
+ .k { background:#F2F4EF; border-radius:10px; padding:10px 12px } .k span { color:#5E6B63; font-size:.85rem }
+ .k b { display:block; font-size:1.35rem }
+ h2 { font-size:1rem; color:#2F6B4F; margin:20px 0 8px }
+ .crops { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:10px }
+ .crop { background:#F2F4EF; border-radius:10px; padding:10px 12px } .crop small { display:block; color:#5E6B63 }
+ .crop.best { background:#fff; border:2px solid #2F6B4F } .crop p { margin:6px 0 0; font-size:.85rem; color:#3B4A41 }
+ .scen { font-size:.9rem; margin:8px 0 0 }
+ ul { margin:0; padding-left:20px } li.warn::marker { color:#C8912E } li.ok::marker { color:#2F6B4F } li.info::marker { color:#378ADD }
+ table { border-collapse:collapse; width:100%; font-size:.9rem } td { border-bottom:1px solid #EEF1EC; padding:5px 6px; vertical-align:top }
+ .src { color:#6B7A70; font-size:.82rem; text-align:right }
+ .limits { font-size:.82rem; color:#5E6B63 } .foot { margin-top:16px; font-size:.8rem; color:#5E6B63; border-top:1px solid #EEF1EC; padding-top:10px }
+ @media (max-width:640px) { .kpis, .crops { grid-template-columns:1fr 1fr } }
+ @media print { body { background:#fff; padding:0 } .page { padding:0; max-width:none }
+   .head, .verdict, .k, .crop { -webkit-print-color-adjust:exact; print-color-adjust:exact } }
+</style></head><body><div class="page">
+<div class="head"><div><small>TerraShift · field report · 15 Nov 2026</small>
+<h1>My field</h1><small>Fez, Fez-Meknes · 34.0331, -5.0003</small></div><svg viewBox="0 0 64 64" width="44" height="44" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="16" fill="#1F3D2E"/><circle cx="32" cy="36" r="17" fill="#2F6B4F"/><path d="M15 36 Q32 30 49 36" stroke="#C9A35A" stroke-width="2.5" fill="none"/><path d="M17 43 Q32 38 47 43" stroke="#C9A35A" stroke-width="2.5" fill="none"/><path d="M20 29 Q32 25 44 29" stroke="#9FD07A" stroke-width="2.5" fill="none"/><path d="M8 22 Q32 2 56 22" stroke="#E8F0EA" stroke-width="1.6" fill="none" stroke-dasharray="3 3"/><g transform="rotate(25 45 11)"><rect x="41" y="8" width="9" height="6" rx="1.5" fill="#E8F0EA"/><rect x="36" y="9" width="5" height="3" fill="#8FB8E0"/><rect x="50" y="9" width="5" height="3" fill="#8FB8E0"/></g></svg></div>
+<div class="verdict"><b>Conditions look normal for the season.</b><ul><li class='info'>45 mm of rain in the last 30 days, close to the usual 69 mm.</li><li class='info'>Soil moisture is normal for this time of year.</li><li class='ok'>Drought risk for the next 14 days: low (13%).</li><li class='ok'>The last 12 months are among the wettest of the last 10 years.</li></ul></div>
+<div class='kpis'><div class='k'><span>Rain, last 30 days</span><b>45 mm</b></div><div class='k'><span>Usual rain</span><b>69 mm</b></div><div class='k'><span>Dry-spell risk (14 days)</span><b>13%</b></div></div>
+<h2>Suggested crop for this season</h2><div class='crops'><div class='crop best'><b>Barley · 88%</b><small>sow around 15 Nov 2026</small><p>A cereal after faba bean uses the nitrogen the legume left in the soil.</p></div><div class='crop'><b>Sugar beet · 78%</b><small>sow around 15 Oct 2027</small></div><div class='crop'><b>Rapeseed · 78%</b><small>sow around 25 Oct 2027</small></div></div><p class='scen'><b>Best rotation for your criteria:</b> Suggested: Barley (score 0.86, about 30 mm/yr of irrigation)</p>
+<h2>Alerts</h2><ul><li>No alert for this period.</li></ul>
+<h2>Numbers and their sources</h2><table><tr><td>Rain, last 30 days</td><td><b>45 mm (usual 69 mm)</b></td><td class='src'>NASA POWER</td></tr><tr><td>Root-zone soil wetness (0–1)</td><td><b>0.48</b></td><td class='src'>NASA POWER</td></tr><tr><td>Max temperature</td><td><b>30.5 °C</b></td><td class='src'>NASA POWER</td></tr><tr><td>Chance of a dry spell (next 14 days)</td><td><b>13%</b></td><td class='src'>TerraShift model on NASA POWER</td></tr></table>
+<h2>Limits</h2><ul class="limits"><li>NASA POWER is regional (~50 km); satellite pixels are 30 m to 9 km.</li><li>Crop water needs use indicative FAO-56 values; soil type and yields are not included.</li><li>Climate simulations are TerraShift scenarios, not NASA forecasts.</li><li>Alert thresholds used: dry soil &lt; 0.30, rain &lt; 50% of usual, heat &gt; 38 °C.</li></ul>
+<div class="foot">This report supports decisions; it does not replace a field visit or the advice of an agronomist.
+NASA provides observations and estimates; predictions and simulations are computed by TerraShift and are not official NASA forecasts.</div>
+</div></body></html>

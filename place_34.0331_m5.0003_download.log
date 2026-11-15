@@ -1,0 +1,13 @@
+📍 place_34.0331_m5.0003 (34.0331, -5.0003)  2025-11-12 → 2026-11-12
+
+⛰️  Reading NASADEM elevation (NASA SRTM, no account needed) ...
+   ⚠️  NASADEM error: No module named 'planetary_computer'
+🌿 Reading MODIS NDVI (NASA, no account needed) ...
+   ⚠️  MODIS error: No module named 'planetary_computer'
+
+🛰️  Reading Landsat Collection 2 Level-2 scenes ...
+   ⚠️  Landsat error: No module named 'planetary_computer'
+
+ℹ️  No Earthdata account found: SMAP, ECOSTRESS and GPM skipped (soil moisture and rain still come from NASA POWER).
+
+🎉 Done!

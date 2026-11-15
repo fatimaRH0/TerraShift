@@ -1,0 +1,18 @@
+# FIELD SHIFT visual theme
+[theme]
+base = "light"
+primaryColor = "#2F6B4F"            # olive field green
+backgroundColor = "#F3F5F0"         # pale sage
+secondaryBackgroundColor = "#E6EBE2"
+textColor = "#1F2A24"               # olive ink
+borderColor = "#D3DBCF"
+baseRadius = "6px"
+
+[theme.sidebar]
+backgroundColor = "#1F3A2D"         # dark olive
+secondaryBackgroundColor = "#2A4A3A"
+textColor = "#E9EFE6"
+borderColor = "#3A5C4A"
+
+[client]
+toolbarMode = "minimal"
